@@ -35,6 +35,12 @@
         <p>Your second value is <span data-ng-bind="second"></span></p>
         
         <p>{{person.fName + " " + person.lName}} you entered</p>
+
+        <ul>
+            <li ng-repeat="capital in capitals">
+                {{'City: ' + capital.city + ', State: ' + capital.state}}
+            </li>
+        </ul>
  
     </div>
  
